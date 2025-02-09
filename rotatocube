@@ -1,0 +1,231 @@
+noop
+set x1 -1
+set y1 -1
+set z1 -1
+set x2 1
+set y2 -1
+set z2 -1
+set x3 1
+set y3 1
+set z3 -1
+set x4 -1
+set y4 1
+set z4 -1
+set x5 -1
+set y5 -1
+set z5 1
+set x6 1
+set y6 -1
+set z6 1
+set x7 1
+set y7 1
+set z7 1
+set x8 -1
+set y8 1
+set z8 1
+noop
+set angleX 0
+set angleY 0
+set speedX 2
+set speedY 2
+noop
+set scale 50
+set centerX 88
+set centerY 88
+noop
+draw clear 0 0 0 0 // Clear
+noop
+op add angleX angleX speedX
+op add angleY angleY speedY
+noop
+op sin sX angleX 0
+op cos cX angleX 0
+noop
+op sin sY angleY 0
+op cos cY angleY 0
+noop
+noop
+op mul y1r y1 cX
+op mul z1r z1 sX
+op sub y1p y1r z1r
+op mul z1p y1 sX
+op mul z1r2 z1 cX
+op add z1p z1p z1r2
+noop
+op mul x1r x1 cY
+op mul z1r z1p sY
+op add x1p x1r z1r
+op mul z1p2 x1 sY
+op mul z1r3 z1p cY
+op sub z1p2 z1r3 z1p2
+noop
+op mul x1p x1p scale
+op mul y1p y1p scale
+op add x1p x1p centerX
+op add y1p y1p centerY
+noop
+op mul y2r y2 cX
+op mul z2r z2 sX
+op sub y2p y2r z2r
+op mul z2p y2 sX
+op mul z2r2 z2 cX
+op add z2p z2p z2r2
+noop
+op mul x2r x2 cY
+op mul z2r z2p sY
+op add x2p x2r z2r
+op mul z2p2 x2 sY
+op mul z2r3 z2p cY
+op sub z2p2 z2r3 z2p2
+noop
+op mul x2p x2p scale
+op mul y2p y2p scale
+op add x2p x2p centerX
+op add y2p y2p centerY
+noop
+op mul y3r y3 cX
+op mul z3r z3 sX
+op sub y3p y3r z3r
+op mul z3p y3 sX
+op mul z3r2 z3 cX
+op add z3p z3p z3r2
+noop
+op mul x3r x3 cY
+op mul z3r z3p sY
+op add x3p x3r z3r
+op mul z3p2 x3 sY
+op mul z3r3 z3p cY
+op sub z3p2 z3r3 z3p2
+noop
+op mul x3p x3p scale
+op mul y3p y3p scale
+op add x3p x3p centerX
+op add y3p y3p centerY
+noop
+op mul y4r y4 cX
+op mul z4r z4 sX
+op sub y4p y4r z4r
+op mul z4p y4 sX
+op mul z4r2 z4 cX
+op add z4p z4p z4r2
+noop
+op mul x4r x4 cY
+op mul z4r z4p sY
+op add x4p x4r z4r
+op mul z4p2 x4 sY
+op mul z4r3 z4p cY
+op sub z4p2 z4r3 z4p2
+noop
+op mul x4p x4p scale
+op mul y4p y4p scale
+op add x4p x4p centerX
+op add y4p y4p centerY
+noop
+op mul y5r y5 cX
+op mul z5r z5 sX
+op sub y5p y5r z5r
+op mul z5p y5 sX
+op mul z5r2 z5 cX
+op add z5p z5p z5r2
+noop
+op mul x5r x5 cY
+op mul z5r z5p sY
+op add x5p x5r z5r
+op mul z5p2 x5 sY
+op mul z5r3 z5p cY
+op sub z5p2 z5r3 z5p2
+noop
+op mul x5p x5p scale
+op mul y5p y5p scale
+op add x5p x5p centerX
+op add y5p y5p centerY
+noop
+op mul y6r y6 cX
+op mul z6r z6 sX
+op sub y6p y6r z6r
+op mul z6p y6 sX
+op mul z6r2 z6 cX
+op add z6p z6p z6r2
+noop
+op mul x6r x6 cY
+op mul z6r z6p sY
+op add x6p x6r z6r
+op mul z6p2 x6 sY
+op mul z6r3 z6p cY
+op sub z6p2 z6r3 z6p2
+noop
+op mul x6p x6p scale
+op mul y6p y6p scale
+op add x6p x6p centerX
+op add y6p y6p centerY
+noop
+op mul y7r y7 cX
+op mul z7r z7 sX
+op sub y7p y7r z7r
+op mul z7p y7 sX
+op mul z7r2 z7 cX
+op add z7p z7p z7r2
+noop
+op mul x7r x7 cY
+op mul z7r z7p sY
+op add x7p x7r z7r
+op mul z7p2 x7 sY
+op mul z7r3 z7p cY
+op sub z7p2 z7r3 z7p2
+noop
+op mul x7p x7p scale
+op mul y7p y7p scale
+op add x7p x7p centerX
+op add y7p y7p centerY
+noop
+op mul y8r y8 cX
+op mul z8r z8 sX
+op sub y8p y8r z8r
+op mul z8p y8 sX
+op mul z8r2 z8 cX
+op add z8p z8p z8r2
+noop
+op mul x8r x8 cY
+op mul z8r z8p sY
+op add x8p x8r z8r
+op mul z8p2 x8 sY
+op mul z8r3 z8p cY
+op sub z8p2 z8r3 z8p2
+noop
+op mul x8p x8p scale
+op mul y8p y8p scale
+op add x8p x8p centerX
+op add y8p y8p centerY
+noop
+draw stroke 2 0 0 0 0 0
+draw color 0 0 255 255 0 0
+draw line x1p y1p x2p y2p 255 255
+draw color 255 0 0 255 0 0
+draw line x2p y2p x3p y3p 255 255
+draw color 255 255 255 255 0 0
+draw line x3p y3p x4p y4p 255 255
+draw line x4p y4p x1p y1p 255 255
+draw line x5p y5p x6p y6p 255 255
+draw line x6p y6p x7p y7p 255 255
+draw line x7p y7p x8p y8p 255 255
+draw line x8p y8p x5p y5p 255 255
+draw line x1p y1p x5p y5p 255 255
+draw color 0 255 0 255 0 0
+draw line x2p y2p x6p y6p 255 255
+draw color 255 255 255 255 0 0
+draw line x3p y3p x7p y7p 255 255
+draw line x4p y4p x8p y8p 255 255
+wait 0.016
+drawflush display1
+print "MADE BY [green]WAN"
+printflush message1
+jump 225 greaterThanEq angleX 360
+jump 228 greaterThanEq angleY 360
+jump 35 always 0 0
+end
+set angleX 0
+jump 223 always 0 0
+end
+set angleY 0
+jump 223 always 0 0
+end
